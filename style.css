@@ -13,6 +13,9 @@
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Muli", serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .hamburguer{
     width: 2rem;
@@ -36,11 +39,10 @@
     background-color: #ffffff;
     box-shadow: 0.1rem 0.1rem 1px #000;
     transition: transform 1s;
-
 }
 
 .show-menu #line1{
-    transform: rotate(35deg) translate(.3rem, .35rem);
+    transform: rotate(35deg) translate(.3rem, .35rem);   
 }
 
 .show-menu #line2{
@@ -49,7 +51,7 @@
 }
 
 .show-menu #line3{
-    transform: rotate(-45deg) translate(.3rem, -.45rem);
+    transform: rotate(-45deg) translate(.3rem, -.45rem);   
 }
 
 .hamburguer span{
@@ -181,6 +183,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -572,4 +575,52 @@ header{
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #ff00cc;  
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to left, #333399, #ff00cc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: seashell;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
